@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  
+  <!-- 使用阿里云镜像加速下载 -->
+  <mirrors>
+    <mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>https://maven.aliyun.com/repository/central</url>
+      <mirrorOf>central</mirrorOf>        
+    </mirror>
+  </mirrors>
+
+  <!-- 本地仓库位置 -->
+  <localRepository>${user.home}/.m2/repository</localRepository>
+
+  <!-- 代理设置（如果需要） -->
+  <!--
+  <proxies>
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <username>proxyuser</username>
+      <password>proxypass</password>
+      <host>proxy.host.com</host>
+      <port>80</port>
+      <nonProxyHosts>localhost|127.*|[::1]</nonProxyHosts>
+    </proxy>
+  </proxies>
+  -->
+</settings>

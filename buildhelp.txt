@@ -1,0 +1,17 @@
+$env:PATH = "$PWD\tools\jdk\bin;$PWD\tools\maven\bin;$env:PATH"
+cd app
+..\tools\maven\bin\mvn.cmd clean package -DskipTests
+ java -jar target\xdman.jar
+
+
+ openjdk下载链接 JDK11
+ https://adoptium.net/zh-CN/temurin/releases
+ win:
+ https://adoptium.net/zh-CN/download?link=https%3A%2F%2Fgithub.com%2Fadoptium%2Ftemurin11-binaries%2Freleases%2Fdownload%2Fjdk-11.0.29%252B7%2FOpenJDK11U-jdk_x64_windows_hotspot_11.0.29_7.zip&vendor=Adoptium
+
+maven 3.8.8
+https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.zip
+Maven 3.8.8国内镜像:
+华为云: https://repo.huaweicloud.com/apache/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.zip
+阿里云: https://mirrors.aliyun.com/apache/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.zip
+清华大学: https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.zip
